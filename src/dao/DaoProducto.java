@@ -77,7 +77,7 @@ public class DaoProducto {
 	    }
 	 
 	 public List<Producto> listarProductos() {
-	        List<Producto> lista = new ArrayList<>();
+	        List<Producto> lProductos = new ArrayList<>();
 
 	        String query = "SELECT codigo, nombre, precio, stock, idCategoria FROM Productos";
 
@@ -98,14 +98,14 @@ public class DaoProducto {
 	                p.setStock(rs.getInt("stock"));
 	                p.setIdCategoria(rs.getInt("idCategoria"));
 
-	                lista.add(p);
+	                lProductos.add(p);
 	            }
 
 	        } catch (Exception e) {
 	            e.printStackTrace();
 	        }
 
-	        return lista;
+	        return lProductos;
 	    }
 	
 }
