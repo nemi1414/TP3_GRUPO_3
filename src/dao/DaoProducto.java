@@ -79,7 +79,7 @@ public class DaoProducto {
 	 public List<Producto> listarProductos() {
 	        List<Producto> lProductos = new ArrayList<>();
 
-	        String query = "SELECT codigo, nombre, precio, stock, idCategoria FROM Productos";
+	        String query = "SELECT * FROM Productos";
 
 	        Conexion conexion = new Conexion();
 	        Connection cn = null;
