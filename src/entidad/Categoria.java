@@ -11,6 +11,8 @@ public class Categoria {
         this.idCategoria = idCategoria;
         this.nombre = nombre;
     }
+    
+    
  
     public int getIdCategoria() {
         return idCategoria;
@@ -30,7 +32,7 @@ public class Categoria {
  
     @Override
     public String toString() {
-        return "Categoria [ID=" + idCategoria + ", Nombre=" + nombre + "]";
+        return "ID=" + idCategoria + ", Nombre=" + nombre ;
     }
 }
  
