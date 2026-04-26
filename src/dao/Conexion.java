@@ -13,8 +13,7 @@ public class Conexion {
 	public Connection getConnection() {
 		Connection cn = null;
 		try {
-			cn = DriverManager.getConnection(host + dbName, user, pass);
-			System.out.println("conectado");
+			cn = DriverManager.getConnection(host + dbName + "?useSSL=false", user, pass);
 		}
 		catch(SQLException e){
 			e.printStackTrace();
